@@ -1,0 +1,11 @@
+int8 status
+
+int8 OFF = 0
+int8 STAND_BY = 1
+int8 DETECTING = 2
+int8 STARTING = 3
+int8 OPERATING = 4
+int8 TASK_FINISHED = 5
+int8 FULL_STOP = 6
+int8 EMERGENCY_STOP = 64
+int8 TEST_MODE = 127

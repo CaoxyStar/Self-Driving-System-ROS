@@ -1,0 +1,3268 @@
+{
+    "can_config": [
+        {
+            "message_name": "VECTOR__INDEPENDENT_SIG_MSG",
+            "message_id": "0xc0000000",
+            "message_length": 0,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Course_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 359.9,
+                    "unit": "Degrees"
+                },
+                {
+                    "signal_name": "Azimuth_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 359.0,
+                    "unit": "Degrees"
+                },
+                {
+                    "signal_name": "M1_Version_ECU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "ADDM_AD_Mode_Internal_0x130",
+            "message_id": "0x130",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "AD_Mode_Internal_ADDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 8,
+                    "data_type": "signed",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "Enumerated"
+                }
+            ]
+        },
+        {
+            "message_name": "ADDM_Longitudinal_Control_0x132",
+            "message_id": "0x132",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Braking_Request_ADDM",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Gear_Shift_Request_ADDM",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 4.0,
+                    "unit": "Enumeration"
+                },
+                {
+                    "signal_name": "Throttle_Request_ADDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Clutch_Position_Request_ADDM",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "message_name": "ADDM_Lateral_Control_0x131",
+            "message_id": "0x131",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Steering_Angle_Request_ADDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": -180.0,
+                    "minimum": -180.0,
+                    "maximum": 180.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "PDM_ADC3_0x685",
+            "message_id": "0x685",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "ADC_15_PDM",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_14_PDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                }
+            ]
+        },
+        {
+            "message_name": "PDM_ADC2_0x684",
+            "message_id": "0x684",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "ADC_B5_PDM",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_B4_PDM",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_B3_PDM",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_B2_PDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                }
+            ]
+        },
+        {
+            "message_name": "PDM_ADC1_0x683",
+            "message_id": "0x683",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "ADC_B1_PDM",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_B0_PDM",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_A5_PDM",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_A4_PDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                }
+            ]
+        },
+        {
+            "message_name": "PDM_ADC0_0x682",
+            "message_id": "0x682",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "ADC_A3_PDM",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_A2_PDM",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_A1_PDM",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                },
+                {
+                    "signal_name": "ADC_A0_PDM",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.000732421875,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "V"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_SuspensionDisplacement_0x64B",
+            "message_id": "0x64b",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Susp_Displacement_RR_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": -100.0,
+                    "minimum": -100.0,
+                    "maximum": 100.0,
+                    "unit": "mm"
+                },
+                {
+                    "signal_name": "Susp_Displacement_RL_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": -100.0,
+                    "minimum": -100.0,
+                    "maximum": 100.0,
+                    "unit": "mm"
+                },
+                {
+                    "signal_name": "Susp_Displacement_FR_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": -100.0,
+                    "minimum": -100.0,
+                    "maximum": 100.0,
+                    "unit": "mm"
+                },
+                {
+                    "signal_name": "Susp_Displacement_FL_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 100.0,
+                    "minimum": -100.0,
+                    "maximum": 100.0,
+                    "unit": "mm"
+                }
+            ]
+        },
+        {
+            "message_name": "ADU_0x704",
+            "message_id": "0x704",
+            "message_length": 1,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Brightness_ADU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "SCU_0x177",
+            "message_id": "0x177",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Launch_Control_Switch_SCU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Team_Radio_Switch_SCU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Clutch_Switch_SCU",
+                    "start_byte": 7,
+                    "start_bit": 63,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Mark_Switch_SCU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "SCU_0x174",
+            "message_id": "0x174",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Auto_Shift_Switch_SCU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 2.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Tractionl_Range_Switch_SCU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 9.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "MAP_Strategy_SCU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 10.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Neutral_Switch_SCU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "SCU_0x176",
+            "message_id": "0x176",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Throttle_Strategy_SCU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 10.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Launch_Control_Strategy_SCU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 10.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "ARB_Strategy_SCU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 6.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Traction_Aim_Switch_SCU",
+                    "start_byte": 7,
+                    "start_bit": 63,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 10.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "GYR_0x300",
+            "message_id": "0x300",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Acc_Y_Axis_GYR",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.0001274,
+                    "bias": -4.1746432,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "g"
+                },
+                {
+                    "signal_name": "Yaw_Rate_GYR",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.005,
+                    "bias": -163.84,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "��/s"
+                }
+            ]
+        },
+        {
+            "message_name": "GYR_0x304",
+            "message_id": "0x304",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Acc_X_Axis_GYR",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.0001274,
+                    "bias": -4.1746432,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "g"
+                },
+                {
+                    "signal_name": "Roll_Rate_GYR",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.005,
+                    "bias": -163.84,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "��/s"
+                }
+            ]
+        },
+        {
+            "message_name": "GYR_0x308",
+            "message_id": "0x308",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Acc_Z_Axis_GYR",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.0001274,
+                    "bias": -4.1746432,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "g"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_VehicleState1_0x640",
+            "message_id": "0x640",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Vehicle_Speed_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 300.0,
+                    "unit": "kmh"
+                },
+                {
+                    "signal_name": "Steering_Angle_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": -720.0,
+                    "minimum": -720.0,
+                    "maximum": 720.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Brake_Pressure_Front_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 200.0,
+                    "unit": "bar"
+                },
+                {
+                    "signal_name": "Brake_Pressure_Rear_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 200.0,
+                    "unit": "bar"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_VehicleState2_0x641",
+            "message_id": "0x641",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Wheel_Speed_Front_Left_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 340.0,
+                    "unit": "kmh"
+                },
+                {
+                    "signal_name": "Wheel_Speed_Front_Right_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 340.0,
+                    "unit": "kmh"
+                },
+                {
+                    "signal_name": "Wheel_Speed_Rear_Left_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 340.0,
+                    "unit": "kmh"
+                },
+                {
+                    "signal_name": "Wheel_Speed_Rear_Right_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 340.0,
+                    "unit": "kmh"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_VehicleState3_0x642",
+            "message_id": "0x642",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Brake_Bias_ECU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 0.5,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Gear_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -2.0,
+                    "minimum": -2.0,
+                    "maximum": 7.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Gear_Shift_Request_ECU",
+                    "start_byte": 0,
+                    "start_bit": 3,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 4.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Gear_Shift_State_ECU",
+                    "start_byte": 1,
+                    "start_bit": 11,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 5.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Output_Shaft_Speed_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3000.0,
+                    "unit": "rpm"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_VehicleState4_0x643",
+            "message_id": "0x643",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Brake_State_ECU",
+                    "start_byte": 0,
+                    "start_bit": 1,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -1.0,
+                    "minimum": -1.0,
+                    "maximum": 2.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Throttle_Aim_State_ECU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 7.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Engine_State_ECU",
+                    "start_byte": 0,
+                    "start_bit": 5,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Launch_State_ECU",
+                    "start_byte": 1,
+                    "start_bit": 11,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Throttle_0x644",
+            "message_id": "0x644",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Throttle_Pedal_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Throttle_Position_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Throttle_Aim_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Warning_0x645",
+            "message_id": "0x645",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Engine_Oil_Temp_Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Engine_Oil_Pressure_Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 3,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Engine_Oil_Pressure_Low_ECU",
+                    "start_byte": 0,
+                    "start_bit": 1,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Coolant_Temperature_Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 5,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Engine_Speed_Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 2,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Fuel_Pressure_Warning_ECU",
+                    "start_byte": 0,
+                    "start_bit": 4,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Warning_Source_ECU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "M1_PDMCmd_0x100",
+            "message_id": "0x100",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Coolant_Fan_1_On_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Coolant_Fan_2_On_ECU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Coolant_Pump_On_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "ETC_Cut_ECU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Inlet_0x646",
+            "message_id": "0x646",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Manifold_Pressure_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 300.0,
+                    "unit": "kPa"
+                },
+                {
+                    "signal_name": "Manifold_Temperature_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 8,
+                    "data_type": "signed",
+                    "factor": 1.0,
+                    "bias": -50.0,
+                    "minimum": -50.0,
+                    "maximum": 200.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Inlet_Mass_Flow_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 300.0,
+                    "unit": "g/s"
+                },
+                {
+                    "signal_name": "Variable_Intake_Position_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Cooling_0x647",
+            "message_id": "0x647",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Fuel_Pressure_ECU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "kPa"
+                },
+                {
+                    "signal_name": "Fuel_Temperature_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -40.0,
+                    "minimum": -40.0,
+                    "maximum": 215.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Engine_Oil_Pressure_ECU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "kPa"
+                },
+                {
+                    "signal_name": "Engine_Oil_Temperature_ECU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -40.0,
+                    "minimum": -40.0,
+                    "maximum": 215.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Coolant_Temperature_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -40.0,
+                    "minimum": -40.0,
+                    "maximum": 215.0,
+                    "unit": "C"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Exhaust_0x648",
+            "message_id": "0x648",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Fuel_Mixture_Aim_ECU",
+                    "start_byte": 3,
+                    "start_bit": 31,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 2.0,
+                    "unit": "LA"
+                },
+                {
+                    "signal_name": "Exhaust_Lambda_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 2.0,
+                    "unit": "LA"
+                },
+                {
+                    "signal_name": "Exhaust_Temperature_ECU",
+                    "start_byte": 1,
+                    "start_bit": 15,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1200.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Ignition_Timing_ECU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": -0.1,
+                    "bias": 0.0,
+                    "minimum": 10.0,
+                    "maximum": 50.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_Fuel_0x649",
+            "message_id": "0x649",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Fuel_Timing_Primary_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": -0.1,
+                    "bias": 0.0,
+                    "minimum": -1440.0,
+                    "maximum": -120.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "Fuel_Output_Cut_Average_ECU",
+                    "start_byte": 5,
+                    "start_bit": 47,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Ignition_Cut_State_ECU",
+                    "start_byte": 1,
+                    "start_bit": 11,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Ignition_Output_Cut_Average_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "Engine_Overrun_State_ECU",
+                    "start_byte": 3,
+                    "start_bit": 27,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Fuel_Closed_Loop_Diagnostic_ECU",
+                    "start_byte": 2,
+                    "start_bit": 19,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -1.0,
+                    "minimum": -1.0,
+                    "maximum": 2.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Fuel_Closed_Loop_State_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": -1.0,
+                    "minimum": -1.0,
+                    "maximum": 3.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Fuel_Cut_State_ECU",
+                    "start_byte": 0,
+                    "start_bit": 3,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 6.0,
+                    "unit": "Enumerated"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_EngineSpeed_0x64A",
+            "message_id": "0x64a",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Engine_Speed_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 30000.0,
+                    "unit": "RPM"
+                },
+                {
+                    "signal_name": "Engine_Speed_Limit_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 30000.0,
+                    "unit": "RPM"
+                },
+                {
+                    "signal_name": "Engine_Speed_Limit_State_ECU",
+                    "start_byte": 7,
+                    "start_bit": 63,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 23.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Engine_Speed_Reference_State_ECU",
+                    "start_byte": 6,
+                    "start_bit": 51,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 10.0,
+                    "unit": "Enumerated"
+                },
+                {
+                    "signal_name": "Launch_Engine_Speed_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 30000.0,
+                    "unit": "RPM"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_RaceFunction_0x64F",
+            "message_id": "0x64f",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Lap_Distance_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "Lap_Number_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Lap_Time_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "s"
+                },
+                {
+                    "signal_name": "Lap_Time_Running_ECU",
+                    "start_byte": 2,
+                    "start_bit": 23,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": "s"
+                }
+            ]
+        },
+        {
+            "message_name": "M1_ECUState_0x64E",
+            "message_id": "0x64e",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "ECU_Up_Time_ECU",
+                    "start_byte": 0,
+                    "start_bit": 7,
+                    "signal_length": 32,
+                    "data_type": "unsigned",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 429496729.5,
+                    "unit": "s"
+                },
+                {
+                    "signal_name": "Logging_System_1_Used_ECU",
+                    "start_byte": 6,
+                    "start_bit": 55,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": "boolean"
+                },
+                {
+                    "signal_name": "Battery_Voltage_ECU",
+                    "start_byte": 4,
+                    "start_bit": 39,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 28.0,
+                    "unit": "V"
+                }
+            ]
+        },
+        {
+            "message_name": "ADDM_EPS_0x141",
+            "message_id": "0x141",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Data0_RMD",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Command_RMD",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data3_RMD",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data2_RMD",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data1_RMD",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "M1_EPC_0x142",
+            "message_id": "0x142",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Data3_RMD",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data2_RMD",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data1_RMD",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data0_RMD",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Command_RMD",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "ADDM_EPB_0x143",
+            "message_id": "0x143",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Data3_RMD",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data2_RMD",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data1_RMD",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data0_RMD",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Command_RMD",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "M1_EPGS_0x144",
+            "message_id": "0x144",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "Data3_RMD",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data2_RMD",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data1_RMD",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Data0_RMD",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 0.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "Command_RMD",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "ADU_Tyre_0x705",
+            "message_id": "0x705",
+            "message_length": 8,
+            "format": "Motorola LSB",
+            "signals": [
+                {
+                    "signal_name": "Tire_Temperature_Front_Left_ADU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -50.0,
+                    "maximum": 1200.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Tire_Temperature_Front_Right_ADU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -50.0,
+                    "maximum": 1200.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Tire_Temperature_Rear_Left_ADU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -50.0,
+                    "maximum": 1200.0,
+                    "unit": "C"
+                },
+                {
+                    "signal_name": "Tire_Temperature_Rear_Right_ADU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -50.0,
+                    "maximum": 1200.0,
+                    "unit": "C"
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_EkfAccelBias_0x6D8",
+            "message_id": "0x6d8",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "EkfAccelBiasZ_IMU",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "m/s2"
+                },
+                {
+                    "signal_name": "EkfAccelBiasY_IMU",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "m/s2"
+                },
+                {
+                    "signal_name": "EkfAccelBiasX_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "m/s2"
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_EkfGyroBias_0x6D7",
+            "message_id": "0x6d7",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "EkfGyroBiasZ_IMU",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "EkfGyroBiasY_IMU",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "EkfGyroBiasX_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -3.2768,
+                    "maximum": 3.2767,
+                    "unit": "deg/s"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_EkfVelPosInnov_0x6D5",
+            "message_id": "0x6d5",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "EkfVelNInnov_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -32.768,
+                    "maximum": 32.767,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "EkfVelEInnov_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -32.768,
+                    "maximum": 32.767,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "EkfPosNInnov_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -32.768,
+                    "maximum": 32.767,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "EkfPosEInnov_GNSS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -32.768,
+                    "maximum": 32.767,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_EkfPosErrHdgInnov_0x6D4",
+            "message_id": "0x6d4",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "EkfHdgInnovWoCons_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "InsGnssPosDiff_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_VehicleWsGearMon_0x6D2",
+            "message_id": "0x6d2",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "VehicleWsTimestamp_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65535.0,
+                    "unit": "ms"
+                },
+                {
+                    "signal_name": "VehicleWsDirection_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "VehicleWheelSpeed_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 655.35,
+                    "unit": "km/h"
+                },
+                {
+                    "signal_name": "VehicleGearPos_INS",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_AngRateRawStaticBias_0x6D6",
+            "message_id": "0x6d6",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AngRateRawStaticBiasZ_IMU",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateRawStaticBiasY_IMU",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateRawStaticBiasX_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_Diagnostics_0x6D0",
+            "message_id": "0x6d0",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "DiagPowerSupply_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "DiagRtkAlgoStatus_INS",
+                    "start_byte": 0,
+                    "start_bit": 2,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "DiagRtkDiffAge_INS",
+                    "start_byte": 0,
+                    "start_bit": 6,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": "s"
+                },
+                {
+                    "signal_name": "ImuStatus_INS",
+                    "start_byte": 1,
+                    "start_bit": 12,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "InsStatus_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "CanRxStatus_INS",
+                    "start_byte": 2,
+                    "start_bit": 22,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "CanTxStatus_INS",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 2,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 3.0,
+                    "unit": null
+                }
+            ]
+        },
+        {
+            "message_name": "INS_LrnMon_0x6D1",
+            "message_id": "0x6d1",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "WsErr_INS",
+                    "start_byte": 3,
+                    "start_bit": 24,
+                    "signal_length": 8,
+                    "data_type": "signed",
+                    "factor": 0.0001,
+                    "bias": 0.0,
+                    "minimum": -0.0128,
+                    "maximum": 0.0127,
+                    "unit": null
+                },
+                {
+                    "signal_name": "DualAntOfsLrn_INS",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "ImuExtrinProgress_INS",
+                    "start_byte": 7,
+                    "start_bit": 56,
+                    "signal_length": 7,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "WsErrCalcPrg_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                },
+                {
+                    "signal_name": "ImuExtrinYawAng_INS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 8,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -12.8,
+                    "maximum": 12.7,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "ImuExtrinPitchAng_INS",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 8,
+                    "data_type": "signed",
+                    "factor": 0.1,
+                    "bias": 0.0,
+                    "minimum": -12.8,
+                    "maximum": 12.7,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "ImuStatic_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 1,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "DualAntOfsLrnProgress_INS",
+                    "start_byte": 0,
+                    "start_bit": 1,
+                    "signal_length": 7,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 100.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_TimeStamp_0x400",
+            "message_id": "0x400",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "ImuYear_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 99.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "ImuMonth_IMU",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 12.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "ImuDay_IMU",
+                    "start_byte": 1,
+                    "start_bit": 12,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 31.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "ImuHour_IMU",
+                    "start_byte": 2,
+                    "start_bit": 18,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 23.0,
+                    "unit": "hr"
+                },
+                {
+                    "signal_name": "ImuMinute_IMU",
+                    "start_byte": 3,
+                    "start_bit": 24,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 59.0,
+                    "unit": "min"
+                },
+                {
+                    "signal_name": "ImuSecond_IMU",
+                    "start_byte": 3,
+                    "start_bit": 30,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 59.0,
+                    "unit": "s"
+                },
+                {
+                    "signal_name": "ImuMilliSecond_IMU",
+                    "start_byte": 4,
+                    "start_bit": 36,
+                    "signal_length": 10,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 999.0,
+                    "unit": "ms"
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_AccelRaw_0x401",
+            "message_id": "0x401",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AccelRawZ_IMU",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                },
+                {
+                    "signal_name": "AccelRawY_IMU",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                },
+                {
+                    "signal_name": "AccelRawX_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                }
+            ]
+        },
+        {
+            "message_name": "IMU_AngRateRaw_0x402",
+            "message_id": "0x402",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AngRateRawZ_IMU",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateRawY_IMU",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateRawX_IMU",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_TimeStamp_0x500",
+            "message_id": "0x500",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssYear_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 99.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "GnssMonth_GNSS",
+                    "start_byte": 1,
+                    "start_bit": 8,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 12.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "GnssDay_GNSS",
+                    "start_byte": 1,
+                    "start_bit": 12,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 1.0,
+                    "maximum": 31.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "GnssHour_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 18,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 23.0,
+                    "unit": "hr"
+                },
+                {
+                    "signal_name": "GnssMinute_GNSS",
+                    "start_byte": 3,
+                    "start_bit": 24,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 59.0,
+                    "unit": "min"
+                },
+                {
+                    "signal_name": "GnssSecond_GNSS",
+                    "start_byte": 3,
+                    "start_bit": 30,
+                    "signal_length": 6,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 59.0,
+                    "unit": "s"
+                },
+                {
+                    "signal_name": "GnssMilliSecond_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 36,
+                    "signal_length": 10,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 999.0,
+                    "unit": "ms"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_LatLon_0x501",
+            "message_id": "0x501",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssLat_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 32,
+                    "data_type": "signed",
+                    "factor": 1e-07,
+                    "bias": 0.0,
+                    "minimum": -90.0,
+                    "maximum": 90.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "GnssLon_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 32,
+                    "data_type": "signed",
+                    "factor": 1e-07,
+                    "bias": 0.0,
+                    "minimum": -180.0,
+                    "maximum": 180.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_AltStatus_0x502",
+            "message_id": "0x502",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssEllipsoid_GNSS",
+                    "start_byte": 3,
+                    "start_bit": 24,
+                    "signal_length": 24,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -8388.608,
+                    "maximum": 8388.607,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "GnssQuality_GNSS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "SatsNum_GNSS",
+                    "start_byte": 7,
+                    "start_bit": 56,
+                    "signal_length": 8,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 255.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "GnssAlt_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 24,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -83886.08,
+                    "maximum": 83886.07,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_Vel_0x503",
+            "message_id": "0x503",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssVelNorth_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GnssVelHori_GNSS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 655.35,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GnssVelEast_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GnssVelDown_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_Hdg_Cog_0x504",
+            "message_id": "0x504",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssHeadingErr_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "GnssHeading_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "GnssCogErr_GNSS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "GnssCog_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "GNSS_PosError0x505",
+            "message_id": "0x505",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "GnssVertVelErr_GNSS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GnssVertPosErr_GNSS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "GnssHoriVelErr_GNSS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GnssHoriPosErr_GNSS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_LatLon_0x601",
+            "message_id": "0x601",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "PosLat_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 32,
+                    "data_type": "signed",
+                    "factor": 1e-07,
+                    "bias": 0.0,
+                    "minimum": -90.0,
+                    "maximum": 90.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "PosLon_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 32,
+                    "data_type": "signed",
+                    "factor": 1e-07,
+                    "bias": 0.0,
+                    "minimum": -180.0,
+                    "maximum": 180.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_AltStatus_0x062",
+            "message_id": "0x602",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "PosEllipsoid_INS",
+                    "start_byte": 3,
+                    "start_bit": 24,
+                    "signal_length": 24,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -8388.608,
+                    "maximum": 8388.607,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "PosQuality_INS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 4,
+                    "data_type": "unsigned",
+                    "factor": 1.0,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 15.0,
+                    "unit": null
+                },
+                {
+                    "signal_name": "PosAlt_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 24,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -83886.08,
+                    "maximum": 83886.07,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_Vel_0x603",
+            "message_id": "0x603",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "VelNorth_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "VelEast_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "VelDown_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -327.68,
+                    "maximum": 327.67,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "GroundVel2D_INS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 655.35,
+                    "unit": "m/s"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_AccelVehicle_0x604",
+            "message_id": "0x604",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AccelVehicleX_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                },
+                {
+                    "signal_name": "AccelVehicleY_INS",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                },
+                {
+                    "signal_name": "AccelVehicleZ_INS",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "m/s/s"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_AngRateVehicle_0x605",
+            "message_id": "0x605",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AngRateVehicleX_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateVehicleY_INS",
+                    "start_byte": 2,
+                    "start_bit": 20,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                },
+                {
+                    "signal_name": "AngRateVehicleZ_INS",
+                    "start_byte": 5,
+                    "start_bit": 40,
+                    "signal_length": 20,
+                    "data_type": "signed",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": -524.288,
+                    "maximum": 524.287,
+                    "unit": "deg/s"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_Attitude_0x606",
+            "message_id": "0x606",
+            "message_length": 6,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "AngleHeading_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "AnglePitch_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -90.0,
+                    "maximum": 90.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "AngleRoll_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "signed",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": -180.0,
+                    "maximum": 180.0,
+                    "unit": "deg"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_PosError_0x607",
+            "message_id": "0x607",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "VertVelErr_INS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "HoriVelErr_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m/s"
+                },
+                {
+                    "signal_name": "VertPosErr_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m"
+                },
+                {
+                    "signal_name": "HoriPosErr_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.001,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 65.535,
+                    "unit": "m"
+                }
+            ]
+        },
+        {
+            "message_name": "INS_Hdg_Cog_0x608",
+            "message_id": "0x608",
+            "message_length": 8,
+            "format": "Intel",
+            "signals": [
+                {
+                    "signal_name": "CogErr_INS",
+                    "start_byte": 6,
+                    "start_bit": 48,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "HeadingErr_INS",
+                    "start_byte": 4,
+                    "start_bit": 32,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "Cog_INS",
+                    "start_byte": 2,
+                    "start_bit": 16,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                },
+                {
+                    "signal_name": "Heading_INS",
+                    "start_byte": 0,
+                    "start_bit": 0,
+                    "signal_length": 16,
+                    "data_type": "unsigned",
+                    "factor": 0.01,
+                    "bias": 0.0,
+                    "minimum": 0.0,
+                    "maximum": 360.0,
+                    "unit": "deg"
+                }
+            ]
+        }
+    ]
+}

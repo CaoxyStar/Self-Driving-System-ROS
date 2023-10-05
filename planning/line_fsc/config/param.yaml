@@ -1,0 +1,14 @@
+k_e: 1
+
+k_v: 0.00001
+
+vel_limit: 1
+
+topicName:
+  perception_topicName: /perception/lidar_cluster
+  perception_finish_topicName: /perception/lidar_cluster/finish_line
+  vel_topicName: /can0/vehicle_state
+  state_topicName: /guardian/inner_as_status
+  planningState_topicName: /planner/planner_status
+  angle_topicName: /control_angle_aim
+  event_topicName: /guardian/current_event

@@ -1,0 +1,5 @@
+uint16 engineSpd
+int16 engineSpdLimit
+int8 engineSpdLimitState
+int8 engineSpdRefState
+int16 engineSpdLaunch

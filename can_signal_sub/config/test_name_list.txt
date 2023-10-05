@@ -1,0 +1,2 @@
+GnssLat_GNSS
+GnssLon_GNSS

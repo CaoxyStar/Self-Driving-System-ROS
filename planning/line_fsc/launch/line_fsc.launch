@@ -1,0 +1,5 @@
+<launch>
+    <node name="line_fsc" pkg="line_fsc" type="line_fsc" output="screen">
+        <rosparam command="load" file="$(find line_fsc)/config/param.yaml" />
+    </node>
+</launch>

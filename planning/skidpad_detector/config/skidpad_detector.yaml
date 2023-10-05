@@ -1,0 +1,24 @@
+cluster_filtered_topic_name: /perception/lidar_cluster
+vehicle_position_topic_name: /vehicle/position
+skidpad_path_topic_name: /planning/global_path
+status_topic_name: /planning/task_status
+
+
+path:
+  skidpad_map: /home/xiaoyu/TJURacing_Autonomous_System/ros/src/planning/skidpad_detector/config/skidpad.pcd
+  path_x: /home/xiaoyu/TJURacing_Autonomous_System/ros/src/planning/skidpad_detector/config/path_x.txt
+  path_y: /home/xiaoyu/TJURacing_Autonomous_System/ros/src/planning/skidpad_detector/config/path_y.txt
+  path_vel: /home/xiaoyu/TJURacing_Autonomous_System/ros/src/planning/skidpad_detector/config/vel.txt
+  path_theta: /home/xiaoyu/TJURacing_Autonomous_System/ros/src/planning/skidpad_detector/config/theta.txt
+
+length:
+  start: 15.0
+  lidar2imu: 1.87
+  threshold: 1.5
+
+slice:
+  rear_len: 100
+  end_flag: 100
+  front_len: 50
+
+node_rate: 50   # [Herz]
